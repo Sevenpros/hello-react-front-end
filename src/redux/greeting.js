@@ -7,7 +7,7 @@ const initialState = {
 const LOAD_GREETING = 'LOAD_GREETING';
 const API_URL = 'http://localhost:3001/greetings';
 
-const greetingReducer = (state = initialState, action) => {
+const greetingReducer = (action, state = initialState) => {
   switch (action.type) {
     case `${LOAD_GREETING}/fulfilled`:
       return { ...state, greeting: action.payload };

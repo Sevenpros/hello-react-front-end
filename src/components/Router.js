@@ -1,16 +1,16 @@
 import React from 'react';
 import {
-    Routes,
-    Route,
-  } from 'react-router-dom';
-  import Greeting from './Greeting';
-  const Router = () => (
-    <>
-      <Routes>
-        <Route path="/" element={<Greeting />} />
-      </Routes>
-    </>
-  
-  );
+  Routes,
+  Route,
+} from 'react-router-dom';
+import Greeting from './Greeting';
 
-  export default Router;
+function Router() {
+  return (
+    <Routes>
+      <Route path="/" element={<Greeting />} />
+    </Routes>
+  );
+}
+
+export default Router;
