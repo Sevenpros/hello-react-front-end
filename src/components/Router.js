@@ -9,6 +9,7 @@ function Router() {
   return (
     <Routes>
       <Route path="/" element={<Greeting />} />
+      <Route path="/greetings" element={<Greeting />} />
     </Routes>
   );
 }
